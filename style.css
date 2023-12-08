@@ -1,0 +1,43 @@
+/**
+ * Styling for the calculator container.
+ */
+ .calculator {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #8E7C93;
+}
+
+/**
+ * Styling for the display input field.
+ */
+#display {
+  width: 93%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #D0A5C0;
+}
+
+body {
+  background-color: #F6C0D0;
+  padding-top: 10%;
+}
+
+p {
+  color: white;
+}
+
+/**
+ * Styling for the keypad buttons.
+ */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+}

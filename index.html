@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-	<div class="calculator">
-		<div class="display">
-			<input type="text" id="result" disabled>
-		</div>
-		<div class="buttons">
-			<button onclick="clearDisplay()">C</button>
-			<button onclick="backspace()">CE</button>
-			<button onclick="addToDisplay('%')">%</button>
-			<button onclick="addToDisplay('/')">/</button>
-			<button onclick="addToDisplay('7')">7</button>
-			<button onclick="addToDisplay('8')">8</button>
-			<button onclick="addToDisplay('9')">9</button>
-			<button onclick="addToDisplay('*')">*</button>
-			<button onclick="addToDisplay('4')">4</button>
-			<button onclick="addToDisplay('5')">5</button>
-			<button onclick="addToDisplay('6')">6</button>
-			<button onclick="addToDisplay('-')">-</button>
-			<button onclick="addToDisplay('1')">1</button>
-			<button onclick="addToDisplay('2')">2</button>
-			<button onclick="addToDisplay('3')">3</button>
-			<button onclick="addToDisplay('+')">+</button>
-			<button onclick="addToDisplay('0')">0</button>
-			<button onclick="addToDisplay('.')">.</button>
-			<button onclick="calculate()">=</button>
-		</div>
-	</div>
-
-	<script src="java.js"></script>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="keypad">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendInput(7)">7</button>
+      <button onclick="appendInput(8)">8</button>
+      <button onclick="appendInput(9)">9</button>
+      <button onclick="appendInput('/')">/</button>
+      <button onclick="appendInput(4)">4</button>
+      <button onclick="appendInput(5)">5</button>
+      <button onclick="appendInput(6)">6</button>
+      <button onclick="appendInput('*')">x</button>
+      <button onclick="appendInput(1)">1</button>
+      <button onclick="appendInput(2)">2</button>
+      <button onclick="appendInput(3)">3</button>
+      <button onclick="appendInput('-')">-</button>
+      <button onclick="appendInput(0)">0</button>
+      <button onclick="appendInput('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendInput('+')">+</button>
+    </div>
+  </div>
+<footer>
+  <p>By Kopo Ntheledi. EST.2023</p>
+</footer>
+  <script src="./scripts.js"></script>
 </body>
 </html>
